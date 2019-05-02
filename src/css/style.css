@@ -1,7 +1,72 @@
-body {
-  background-color: #fce3e6 !important;
+/* General */
+
+.container-fluid {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
+body {
+  background-color: #fce3e6 !important;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.row {
+  margin: 0;
+}
+
+/* Header */
+
+/*---Horizontal Line---*/
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.horizontal-line {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #000;
+  line-height: 0.1em;
+  margin: 40px 0 40px;
+}
+
+.horizontal-line span {
+  /*words background keep it similar to the background's*/
+  background: #fce3e6;
+  padding: 0 10px;
+}
+
+.header a {
+  color: black;
+}
+.navbar {
+  background-image: linear-gradient(to right, #b5f78f, #f9b0b8);
+}
+.center {
+  margin: auto;
+  width: 141px;
+  height: 100px;
+}
+.navbar-brand {
+  width: 100%;
+  margin: auto;
+}
+.brand {
+  width: 10%;
+}
+.active-nav {
+  border-radius: 10px;
+  background-color: #f8fa90;
+}
+
+/* Content */
+
+.content {
+  margin-top: 126px;
+}
 .blog .carousel-indicators {
   left: 0;
   top: auto;
@@ -24,20 +89,21 @@ body {
 /* BIG Carousel */
 
 img.d-block.w-100 {
-  object-fit: cover;
-  height: 100%;
 }
 
 .carousel-item {
+  width: 100%;
   height: 100%;
 }
 
 .carousel-inner {
+  width: 100%;
   height: 100%;
 }
 
-div#carouselExampleIndicators {
-  height: 500px;
+div#bigCarousel {
+  width: 100vw;
+  height: calc(100vw * 0.38);
 }
 
 .col-lg-4 > a {
@@ -98,45 +164,7 @@ div#carouselExampleIndicators {
   text-align: center;
 }
 
-/*---Horizontal Line---*/
-
-.horizontal-line {
-  width: 100%;
-  text-align: center;
-  border-bottom: 2px solid #000;
-  line-height: 0.1em;
-  margin: 40px 0 40px;
-}
-
-.horizontal-line span {
-  /*words background keep it similar to the background's*/
-  background: #fce3e6;
-  padding: 0 10px;
-}
-
-.header a {
-  color: black;
-}
-.navbar {
-  background-image: linear-gradient(to right, #b5f78f, #f9b0b8);
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 70px;
-}
-.navbar-brand {
-  width: 100%;
-  margin: auto;
-}
-.brand {
-  width: 10%;
-}
-.active {
-  border-radius: 10px;
-}
+/* Footer */
 
 #Logo_container {
   text-align: center;
@@ -179,8 +207,4 @@ div#carouselExampleIndicators {
 #Contact_links {
   float: right;
   padding-left: 100px;
-}
-
-.row {
-  margin: 0;
 }
