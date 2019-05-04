@@ -185,7 +185,9 @@ div#bigCarousel {
 }
 
 /* Footer */
-
+.footer{
+  margin-top: 30px;
+}
 #Logo_container {
   text-align: center;
 }
@@ -196,7 +198,7 @@ div#bigCarousel {
 }
 
 #outfooter {
-  background-color: #b67a7a;
+  background-image: linear-gradient(to right, #f9b0b8, #b5f78f);
 }
 #catchphrase {
   font-size: 13px;
