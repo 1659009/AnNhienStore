@@ -48,7 +48,11 @@ body {
   height: 60px;
   font-size: 18px;
   font-weight: bold;
+  padding: 0px;
 }
+
+
+
 
 a.nav-link {
   padding: 0;
