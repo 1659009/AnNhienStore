@@ -14,51 +14,48 @@
     <link rel="stylesheet" href="../../libs/bootstrap.min.css" />
     <link rel="stylesheet" href="../../libs/style.css" />
     <!--  -->
-
-    <style>
-      div#collapsibleNavId-left {
-        padding-left: 100px;
-      }
-
-      div#collapsibleNavId-right {
-        padding-right : 100px;
-      }
-    </style>
   </head>
 
   <body>
     <div class="container-fluid">
       <div class="header">
         <nav class="navbar fixed-t navbar-expand-sm navbar-light bg-light">
-          <div class="collapse navbar-collapse left-nav" id="collapsibleNavId-left">
-            <div class="col-md-4 text-center nav-item">
+          <div
+            class="collapse navbar-collapse left-nav"
+            id="collapsibleNavId-left"
+          >
+            <div class="col text-center nav-item active-nav">
               <a class="nav-link" href="#">Trang Chủ</a>
             </div>
-            <div class="col-md-4 text-center nav-item">
+            <div class="col text-center nav-item">
               <a class="nav-link" href="#">Giới Thiệu</a>
             </div>
-            <div class="col-md-4 text-center nav-item">
+            <div class="col text-center nav-item">
               <a class="nav-link" href="#">Sản Phẩm</a>
             </div>
           </div>
           <div class="text-center brand">
             <a href="#"
-              ><img src="../img/logo.png" alt="Logo" width="100%" height="100%"
+              ><img src="../img/logo2.png" alt="Logo" width="100%" height="100%"
             /></a>
           </div>
-          <div class="collapse navbar-collapse right-nav" id="collapsibleNavId-right">
-            <div class="col-md-4 text-center nav-item">
+          <div
+            class="collapse navbar-collapse right-nav"
+            id="collapsibleNavId-right"
+          >
+            <div class="col text-center nav-item">
               <a class="nav-link" href="#">Liên Hệ</a>
             </div>
-            <div class="col-md-4 text-center nav-item">
+            <div class="col text-center nav-item">
               <a class="nav-link" href="#">Tin Tức</a>
             </div>
-            <div class="col-md-4 text-center nav-item">
+            <div class="col text-center nav-item">
               <a class="nav-link" href="#">Đăng Nhập</a>
             </div>
           </div>
         </nav>
       </div>
+
       <div class="content">
         <div id="bigCarousel" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -183,7 +180,7 @@
             <div class="row blog">
               <div class="col-md-12">
                 <div
-                  id="blogCarousel"
+                  id="blogCarousel1"
                   class="carousel slide"
                   data-ride="carousel"
                 >
@@ -287,6 +284,30 @@
                   <!--.carousel-inner-->
                 </div>
                 <!--.Carousel-->
+                <a
+                  class="carousel-control-prev"
+                  href="#blogCarousel1"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#blogCarousel1"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
             </div>
           </div>
@@ -297,13 +318,13 @@
             <div class="row blog">
               <div class="col-md-12">
                 <div
-                  id="blogCarousel"
+                  id="blogCarousel2"
                   class="carousel slide"
                   data-ride="carousel"
                 >
                   <ol class="carousel-indicators">
                     <li
-                      data-target="#blogCarousel"
+                      data-target="#blogCarousel1"
                       data-slide-to="0"
                       class="active"
                     ></li>
@@ -400,14 +421,73 @@
                   <!--.carousel-inner-->
                 </div>
                 <!--.Carousel-->
+                <a
+                  class="carousel-control-prev"
+                  href="#blogCarousel2"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#blogCarousel2"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-new container">
+          <h2 class="title-med horizontal-line">
+            <span>Tin tức</span>
+          </h2>
+          <div class="row news-box-container">
+            <div class="col-md-4">
+              <a href="#">
+                <img
+                  src="../img/images.png"
+                  alt="Image"
+                  style="max-width:100%;"
+                />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <img
+                  src="../img/images.png"
+                  alt="Image"
+                  style="max-width:100%;"
+                />
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <img
+                  src="../img/images.png"
+                  alt="Image"
+                  style="max-width:100%;"
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div class="footer">
         <div
-          class="container row"
+          class="container-fluid row"
           id="outfooter"
           style="font-style: italic;margin-top: 50px;margin-right: 0px;margin-left: 0px; width: 100%;"
         >
@@ -425,7 +505,6 @@
             <p><b>Website:</b> <a href="#">annhienstore.com</a></p>
           </div>
           <div class="col-lg-6" id="Contact_links">
-            >>>>>>> parent of bfc9693... Change color in footer
             <a href="#" id="">
               <img src="../img/gmail.png" id="footer_logo" alt="MAIL" />
             </a>
@@ -481,5 +560,15 @@
     <script src="../../libs/bootstrap.min.js"></script>
     <script src="../../libs/popper.min.js"></script>
     <script src="../js/multi-slider.js"></script>
+    <script>
+      //leave it
+      window.onscroll = function() {
+        scrollFunction()
+      }
+
+      function scrollFunction() {
+        console.log(window.pageYOffset)
+      }
+    </script>
   </body>
 </html>

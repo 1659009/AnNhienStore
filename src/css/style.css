@@ -22,7 +22,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 5000;
 }
 
 .header a {
@@ -33,30 +33,32 @@ body {
 }
 
 .brand {
-  width: 211.5px;
+  width: 150px;
   height: 150px;
   margin: auto;
+  margin: 0 20px;
   display: block;
 }
 
 .active-nav {
-  border-radius: 10px;
   background-color: #f8fa90;
 }
 
-.col-md-4.text-center.nav-item {
-  height: 60px;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 0px;
+.col.text-center.nav-item {
+  margin: 0 15px;
+  min-height: 50px;
+  min-width: 96px;
+  height: 100%;
+  padding: 0;
+  border-radius: 10px;
 }
 
-
-
-
 a.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
   padding: 0;
-  padding-top: 5%;
+  margin: auto;
 }
 
 .nav-item > a:hover {
@@ -67,8 +69,51 @@ a.nav-link {
   -webkit-transition: background-color 0.3s;
 }
 .nav-item:hover {
-  border-radius: 10px;
   background-color: #f8fa90;
+}
+
+div#collapsibleNavId-left {
+  padding-left: 10%;
+}
+
+div#collapsibleNavId-right {
+  padding-right: 10%;
+}
+
+@media (max-width: 1217px) {
+  div#collapsibleNavId-left {
+    padding-left: 5%;
+  }
+
+  div#collapsibleNavId-right {
+    padding-right: 5%;
+  }
+
+  .brand {
+    width: 130px;
+    height: 130px;
+  }
+
+  a.nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px;
+    padding: 0;
+    margin: auto;
+  }
+
+  .col.text-center.nav-item {
+    margin: 0 15px;
+    min-height: 50px;
+    min-width: 80px;
+    height: 100%;
+    padding: 0;
+    border-radius: 10px;
+  }
+
+  .content {
+    margin-top: 146px;
+  }
 }
 
 /* Content */
@@ -91,6 +136,13 @@ a.nav-link {
 .content {
   margin-top: 166px;
 }
+
+@media (max-width: 1217px) {
+  .content {
+    margin-top: 146px;
+  }
+}
+
 .blog .carousel-indicators {
   left: 0;
   top: auto;
@@ -111,9 +163,6 @@ a.nav-link {
 }
 
 /* BIG Carousel */
-
-img.d-block.w-100 {
-}
 
 .carousel-item {
   width: 100%;
@@ -189,7 +238,9 @@ div#bigCarousel {
 }
 
 /* Footer */
-
+.footer {
+  margin-top: 30px;
+}
 #Logo_container {
   text-align: center;
 }
@@ -231,4 +282,14 @@ div#bigCarousel {
 #Contact_links {
   float: right;
   padding-left: 100px;
+}
+
+/*News Box CSS*/
+
+.news-box-container {
+  margin-top: 15%;
+}
+
+.news-box-container div {
+  padding-left: 7%;
 }
