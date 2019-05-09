@@ -283,3 +283,13 @@ div#bigCarousel {
   float: right;
   padding-left: 100px;
 }
+
+/*News Box CSS*/
+
+.news-box-container {
+  margin-top: 15%;
+}
+
+.news-box-container div {
+  padding-left: 7%;
+}
