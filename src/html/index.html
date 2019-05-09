@@ -14,46 +14,42 @@
     <link rel="stylesheet" href="../../libs/bootstrap.min.css" />
     <link rel="stylesheet" href="../../libs/style.css" />
     <!--  -->
-
-    <style>
-      div#collapsibleNavId-left {
-        padding-left: 100px;
-      }
-
-      div#collapsibleNavId-right {
-        padding-right : 100px;
-      }
-    </style>
   </head>
 
   <body>
     <div class="container-fluid">
       <div class="header">
         <nav class="navbar fixed-t navbar-expand-sm navbar-light bg-light">
-          <div class="collapse navbar-collapse left-nav" id="collapsibleNavId-left">
-            <div class="col-md-4 text-center nav-item">
+          <div
+            class="collapse navbar-collapse left-nav"
+            id="collapsibleNavId-left"
+          >
+            <div class="col text-center nav-item active-nav">
               <a class="nav-link" href="#">Trang Chủ</a>
             </div>
-            <div class="col-md-4 text-center nav-item">
+            <div class="col text-center nav-item">
               <a class="nav-link" href="#">Giới Thiệu</a>
             </div>
-            <div class="col-md-4 text-center nav-item">
+            <div class="col text-center nav-item">
               <a class="nav-link" href="#">Sản Phẩm</a>
             </div>
           </div>
           <div class="text-center brand">
             <a href="#"
-              ><img src="../img/logo.png" alt="Logo" width="100%" height="100%"
+              ><img src="../img/logo2.png" alt="Logo" width="100%" height="100%"
             /></a>
           </div>
-          <div class="collapse navbar-collapse right-nav" id="collapsibleNavId-right">
-            <div class="col-md-4 text-center nav-item">
+          <div
+            class="collapse navbar-collapse right-nav"
+            id="collapsibleNavId-right"
+          >
+            <div class="col text-center nav-item">
               <a class="nav-link" href="#">Liên Hệ</a>
             </div>
-            <div class="col-md-4 text-center nav-item">
+            <div class="col text-center nav-item">
               <a class="nav-link" href="#">Tin Tức</a>
             </div>
-            <div class="col-md-4 text-center nav-item">
+            <div class="col text-center nav-item">
               <a class="nav-link" href="#">Đăng Nhập</a>
             </div>
           </div>
@@ -457,8 +453,11 @@
             >
               <blockquote
                 cite="https://www.facebook.com/tr33hous3jorge/"
-                class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/tr33hous3jorge/">Tr33Hous3Manga Production</a>
+                class="fb-xfbml-parse-ignore"
+              >
+                <a href="https://www.facebook.com/tr33hous3jorge/"
+                  >Tr33Hous3Manga Production</a
+                >
               </blockquote>
             </div>
           </div>
@@ -471,11 +470,21 @@
       async
       defer
       crossorigin="anonymous"
-      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=2269309076625911&autoLogAppEvents=1">
-    </script>
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=2269309076625911&autoLogAppEvents=1"
+    ></script>
     <script src="../../libs/jquery-3.2.1.slim.min.js"></script>
     <script src="../../libs/bootstrap.min.js"></script>
     <script src="../../libs/popper.min.js"></script>
     <script src="../js/multi-slider.js"></script>
+    <script>
+      //leave it
+      window.onscroll = function() {
+        scrollFunction()
+      }
+
+      function scrollFunction() {
+        console.log(window.pageYOffset)
+      }
+    </script>
   </body>
 </html>
